@@ -9,7 +9,7 @@ const CONTACT = {
   email: "poornachandra3217@gmail.com",
   whatsapp: "918639346260",
   linkedin: "poorna-chandra-manupati-708194387",
-  instagram: "mpoorna_chandra",
+  instagram: "poorna3217",
   github: "poornachandra3217-glitch",
 };
 
@@ -178,9 +178,9 @@ syncEmpty();
 const wa = CONTACT.whatsapp.replace(/\D/g, "");
 const contactItems = [
   { name: "Email", text: CONTACT.email, href: "mailto:" + CONTACT.email, val: CONTACT.email },
-  { name: "WhatsApp", text: "+" + wa, href: "https://wa.me/" + (wa && !isPlaceholder(CONTACT.whatsapp) ? wa : CONTACT.whatsapp), val: wa && !isPlaceholder(CONTACT.whatsapp) ? wa : "" },
+  { name: "WhatsApp", text: "+" + wa, href: "https://wa.me/918639346260" + (wa && !isPlaceholder(CONTACT.whatsapp) ? wa : CONTACT.whatsapp), val: wa && !isPlaceholder(CONTACT.whatsapp) ? wa : "" },
   { name: "LinkedIn", text: "linkedin.com/in/" + CONTACT.linkedin, href: "https://www.linkedin.com/in/" + encodeURIComponent(CONTACT.linkedin), val: CONTACT.linkedin },
-  { name: "Instagram", text: "@" + CONTACT.instagram, href: "https://www.instagram.com/" + encodeURIComponent(CONTACT.instagram), val: CONTACT.instagram },
+  { name: "Instagram", text: "@" + CONTACT.instagram, href: "https://www.instagram.com/poorna3217?obrf=bXZlMTdqaWxsMzR3" + encodeURIComponent(CONTACT.instagram), val: CONTACT.instagram },
   { name: "GitHub", text: "github.com/" + CONTACT.github, href: "https://github.com/" + CONTACT.github, val: CONTACT.github },
 ];
 const contactGrid = $("#contactGrid");
