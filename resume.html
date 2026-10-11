@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume | Poornachandra</title>
+  <meta name="description" content="View or download the resume of Poornachandra, a B.Tech student developer.">
+  <meta name="theme-color" content="#0d0b1a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Resume | Poornachandra">
+  <meta property="og:description" content="View or download Poornachandra's resume (PDF).">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      var d = document.documentElement; d.classList.add('js');
+      try { var t = localStorage.getItem('theme'); if (t) d.setAttribute('data-theme', t); } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__in">
+      <a class="logo" href="index.html#home" aria-label="Poornachandra, home">PC<span>.</span></a>
+      <nav id="menu" class="menu" aria-label="Main">
+        <a href="index.html#home">Home</a><a href="index.html#about">About</a><a href="index.html#skills">Skills</a>
+        <a href="index.html#projects">Projects</a><a href="index.html#certificates">Certificates</a>
+        <a href="index.html#journey">Journey</a><a href="index.html#contact">Contact</a>
+        <a href="resume.html" class="is-active" aria-current="page">Resume</a>
+      </nav>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch to light theme"><span aria-hidden="true" id="themeIcon">☀</span></button>
+      <button class="icon-btn burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section resume">
+      <div class="wrap">
+        <h1 class="h2">Resume</h1>
+        <p class="sub">View my resume below or save a copy as a PDF.</p>
+        <div class="btns">
+          <a class="btn btn--primary" href="assets/resume/Poornachandra-Resume.pdf" download="Poornachandra-Resume.pdf">Download Resume (PDF)</a>
+          <a class="btn btn--ghost" href="assets/resume/Poornachandra-Resume.pdf" target="_blank" rel="noopener noreferrer">Open in new tab</a>
+          <a class="btn btn--ghost" href="index.html#contact">Contact Me</a>
+        </div>
+        <iframe class="pdf-frame" src="assets/resume/Poornachandra-Resume.pdf#toolbar=0&amp;navpanes=0&amp;view=FitH" title="Poornachandra's resume (PDF preview)"></iframe>
+        <p class="note">Preview not showing on your device? Use the Download or Open buttons above.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <p>© <span id="year">2026</span> Poornachandra. Built with HTML, CSS and JavaScript.</p>
+      <a href="index.html#home">Back to portfolio</a>
+    </div>
+  </footer>
+  <script src="resume.js" defer></script>
+</body>
+</html>
